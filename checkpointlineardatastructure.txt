@@ -1,0 +1,10 @@
+function sumDistinctElements(set1, set2) {
+    // Use the spread operator to combine the elements of set1 and set2 into a new set
+    let combinedSet = new Set([...set1, ...set2]);
+  
+    // Use the reduce() method to sum the elements of the new set
+    let sum = Array.from(combinedSet).reduce((acc, curr) => acc + curr, 0);
+  
+    return sum;
+}
+ 
